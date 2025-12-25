@@ -1,0 +1,76 @@
+/* Global Layout */
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Employee Grid */
+.employee-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Employee Card */
+.employee-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.employee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Name & Position */
+.employee-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 5px 0;
+}
+
+.employee-position {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Contact Link */
+.contact-link {
+  display: inline-block;
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.contact-link:hover {
+  background-color: #e6f2ff;
+  text-decoration: none;
+}
