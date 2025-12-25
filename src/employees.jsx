@@ -1,15 +1,17 @@
-import './styles.css';
+import React from 'react';
+import '../styles.css';
 
-function Employees({ name, position, email, photo }) {
-  return (<>
-      <div class='card'>
-          <img src={Employees.photo} alt="" />
-          <div>{Employees.name}</div>
-          <div>{Employees.photo}</div>
-          <a href={Employees.email}></a>
-      </div>
-      </>
+const Employee = ({ name, position, email, photo }) => {
+  return (
+    <div className="employee-card">
+      <img src={photo} alt={`${name} profile`} className="profile-img" />
+      <h2 className="employee-name">{name}</h2>
+      <p className="employee-position">{position}</p>
+      <a href={`${email}`} className="email-link">
+        Contacter
+      </a>
+    </div>
   );
-}
+};
 
-export default Employees;
+export default Employee;
